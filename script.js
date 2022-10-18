@@ -11,7 +11,7 @@ function generateRandomNames() {
 
     
 
-    for (let i = 0; i <= 4; i++) {
+    for (let i = 0; i <= 3; i++) {
 
         let newRandomName  = randomNames[Math.floor(Math.random() * randomNames.length)];
 
