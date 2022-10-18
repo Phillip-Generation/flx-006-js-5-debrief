@@ -1,4 +1,4 @@
-let randonName = ["mo", "khady", "abdou", "jason","abdel", 'Mouhamed']
+let randonName = ["mo", "khady", "abdou", "jason","abdel", 'Mouhamed', 'seattle']
 
 
 
