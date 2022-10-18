@@ -1,6 +1,5 @@
 const random = (min, max) => min + (Math.random()*max)
 const $names = $("#names")
-
 const grabRandomName = x => {
   //x = quanity
   let build = [];
@@ -16,12 +15,12 @@ const animateNames = x => {
 
   $mainList.css('height', 'auto');
   let autoHeight = $mainList.height();
+  $mainList.height(0).animate({height: autoHeight}, 450);
 
   let mainDivWidth = parseInt($($('#names').children()[1]).css("width"));
   if($names.children().length > 1) $names.animate({"margin-left": `-=${mainDivWidth}px`}, 1000 )
   
-  $mainList.height(0).animate({height: autoHeight}, 450);
-
+  $('ul:not(.mainList)').animate({opacity: "-=0.175"}, 900)
     
 }
 const displayNames = x => {
@@ -38,19 +37,20 @@ const displayNames = x => {
   $names.prepend($.parseHTML(build))
 
 }
-
-const pushToHistory = () =>{
-  $(".mainList").removeClass();
-}
 const refreshNames = () =>{
   let numNames = parseInt(window.prompt("How many names?"))
   if(numNames > 20) return window.alert("Please enter any number below 20.") 
   if(numNames === 0) return 
   let chosenNames = grabRandomName(numNames)
-  pushToHistory();
+  $(".mainList").removeClass();
   animateNames(chosenNames)
 
+}
 
+const clearHistory = () => {
+  $names.css({"margin-left": 0})
+  $names.html(" ")
+  $("#desc").html("Cleared history.")
 }
 
 const namesToArray = () =>{

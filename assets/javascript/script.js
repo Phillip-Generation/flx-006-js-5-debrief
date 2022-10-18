@@ -17,3 +17,6 @@ namesToArray();
 
 let button = document.getElementById("generateNamesButton")
 button.onclick = refreshNames;
+
+let clearButton = document.getElementById('clearButton')
+clearButton.onclick = clearHistory

@@ -42,7 +42,7 @@ li{
   overflow: hidden;
 }
 ul{
-  padding: 0 16px;
+  padding: 2.5vh 16px 0 16px;  
 }
 .mainList{
   padding: 0 50px;
