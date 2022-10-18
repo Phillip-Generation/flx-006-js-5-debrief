@@ -1,0 +1,50 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+  font-family: 'Lato', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(195, 146, 120);
+  display: flex;
+  flex-flow: column;
+  padding-top: 5vh;
+  align-items: center;
+  text-align: center;
+}
+h1{
+  font-size: 3em;
+  margin-bottom: 1vh;
+}
+#desc{
+  padding: 7px 0x;
+}
+p{
+  font-size: 1.5em;
+}
+button{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.25em;
+  padding: 3px 1em;
+  margin: 1.5vh 0;
+}
+#names{
+  overflow: hidden;
+  max-height: 2000px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+
+}
+li{
+  list-style: none;
+  font-size: 1em;
+  max-height: 2000px;
+  overflow: hidden;
+}
+ul{
+  padding: 0 16px;
+}
+.mainList{
+  padding: 0 50px;
+  font-size: 1.55em;
+}
