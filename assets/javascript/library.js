@@ -10,9 +10,9 @@ const grabRandomName = quanity => {
   return build;
 }
 const clearHistory = () => {
-  $names.css({"margin-left": 0})
-  $names.html(" ")
   $("#desc").html("Cleared history.")
+  for(let i in lists) lists[i].remove();
+  $names.animate({"margin-left": 0}, 1150)
 }
 const animateContainer = x => {
   //https://stackoverflow.com/a/5003287
