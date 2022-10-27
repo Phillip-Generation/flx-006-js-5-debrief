@@ -1,0 +1,13 @@
+body {
+    background-image: url(../img/names-in-bowl.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+   
+}
+h1, p, li{
+    color: darkblue;
+
+}
+li{
+    font-size: x-large;
+}
